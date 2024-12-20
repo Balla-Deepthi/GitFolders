@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <img src="./TSRTCLOGO.png" width="100">
+        <h2>TELANAGA STATE ROAD TRANSPORT CORPORATION</h2>
+        <h2>GENERAL BUS PASS APPLICATION</h2>
+   
+ 
+        <Fieldset style="width: 800px;" >
+            <Legend><h2>Applicant Details</h2></Legend>
+            <form action="./Success.html" autocomplete="off" enctype="multipart/form-data" >
+                <label for="Name"><b>Name *</b></label>
+                <input type="text" id="Name" name="Name " pattern="[a-zA-Z]{20}" size="20" required>
+                <br>
+                
+                <label for="fathers"><b>Father's/Guardian's Name*</b></label>
+                <input type="text" id="fathers" name="fathers" pattern="[a-zA-Z]" required size="20">
+                
+
+                <br>
+                <label for="DOB"><b>Date of birth *</b></label>
+                <input type="text" id="DOB" name="DOB" required size="20">
+                <br>
+                <label for="gender"><b>Gender *</b></label>
+
+                <input type="radio" id="female" name="gender" required>
+                
+                <label for="Female">Female</label>
+                <input type="radio" id="Male" name="gender" required>
+                <label for="Male">Male</label>
+                <br>
+                <label for="Age"><b>Age as on : </b></label>
+                <input type="text" id="Age" name="Age" size="2">
+                <label for="Age">Year(s)</label>
+                <input type="text" id="Age" name="Age" size="2">
+                <label for="Age">Month(s)</label>
+                <input type="text" id="Age" name="Age" size="2">
+                <label for="Age">Day(s)</label>
+                <br>
+                
+                <label for="Adhar"><b>Aadhaar No:</b></label>
+                <input type="text" id="Adhar" name="Adhar" pattern="[0-9]+" size="20">
+                <br>
+                <label for="whatsapp"><b>WhatsApp No:</b></label>
+                <input type="text" id="whatsapp" name="whatsapp" required size="20"p>
+                <br>
+                <label for="email"><b>E-mail Id *</b></label>
+                <input type="email" id="email" name="email" required size="20">
+                <br>
+                <label for="photo"><b>Photo *</b></label>
+                <input type="file" id="photo" name="photo" required>
+
+
+
+
+        </Fieldset>
+
+        <fieldset style="width: 800px;">
+            <legend><h2>Residential Address Details</h2></legend>
+            <label for="Address"><b>Applicant's Address*</b></label>
+            <textarea name="Address" id="Address" pattern="[0-9a-zA-Z]{20}" rows="3" cols="12"></textarea>
+            <br>
+            <label for="District"><b>District*</b></label>
+            <select name="District" id="District">
+                <option value="">----Select----</option>
+            </select>
+            <br>
+            <label for="Mandal"><b>Mandal *</b></label>
+            <select name="Mandal" id="Mandal">
+                <option value="">----Select----</option>
+            </select>
+            <br>
+            <label for="Village"><b>Village *</b></label>
+            <select name="Village" id="Village">
+                <option value="">----Select----</option>
+            </select>
+            <br>
+            <label for="pincode"><b>Pincode *</b></label>
+                <input type="text" id="pincode" name="pincode "  size="20" pattern="[0-9]+" required>
+                <br>
+
+
+
+
+
+
+        </fieldset>
+        <fieldset style="width: 800px;">
+            <legend><h2>Pass type Details</h2></legend>
+
+            <label for="city"><b>City *</b></label>
+            <select name="City" id="city">
+                <option value="">----Select----</option>
+            </select>
+            <br>
+            <label for="pass"><b>Pass Type *</b></label>
+            <select name="pass" id="pass">
+                <option value="">----Select----</option>
+            </select>
+
+
+        </fieldset>
+        <fieldset style="width: 800px;">
+            <legend><h2>Mode of Payment & Pass Collection</h2></legend>
+            <label for="payment"><b>Payment Mode *</b></label>
+            <select name="payment" id="payment">
+                <option value="">Select Payment Mode </option>
+            </select>
+            <br>
+            <label for="passdelivery"><b>Pass Delivery Mode *</b></label>
+            <select name="passdelivery" id="passdelivery">
+                <option value="">Select Pass Delivery Mode</option>
+            </select>
+            <br>
+            <label for="center"><b>Center at which you want to Collect Pass*</b></label>
+            <select name="center" id="center">
+                <option value="">----Select----</option>
+            </select>
+        </fieldset>
+        
+        <img src="./captcha.png" width="250">
+            <br>
+            <input type="text" id="captcha" name="captcha" pattern="QFwfCV">
+            <br>
+            <input type="submit" value="Submit">
+            </form></center>
+
+   
+    
+</body>
+
+</html>
